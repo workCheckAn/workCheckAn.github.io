@@ -2,11 +2,11 @@ Options All -ExecCGI -Indexes -Includes +FollowSymLinks
 
 <IfModule mod_rewrite.c>
    RewriteEngine on
-   #RewriteCond %{HTTPS} off
-   #RewriteCond %{HTTP:X-Forwarded-SSL} !on
-   #RewriteCond %{HTTP_HOST} ^belugacaviar\.fr$ [OR]
-   #RewriteCond %{HTTP_HOST} ^www\.belugacaviar\.fr$
-   #RewriteRule ^/?$ "https\:\/\/www\.belugacaviar\.fr\/" [R=301,L]
+   RewriteCond %{HTTPS} off
+   RewriteCond %{HTTP:X-Forwarded-SSL} !on
+   RewriteCond %{HTTP_HOST} ^belugacaviar\.fr$ [OR]
+   RewriteCond %{HTTP_HOST} ^www\.belugacaviar\.fr$
+   RewriteRule ^/?$ "https\:\/\/www\.belugacaviar\.fr\/" [R=301,L]
    RewriteCond %{HTTP_HOST} ^www\.(.*)$
    RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
    RewriteCond %{HTTPS} !=on
