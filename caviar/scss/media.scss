@@ -1,0 +1,323 @@
+@media only screen and (min-width: 1200px) {
+   .mobile-nav {
+      display: none !important
+   }
+}
+
+@media only screen and (max-width: 1200px) {
+   nav {
+      justify-content: space-between;
+   }
+
+   ul.menu {
+      display: none;
+   }
+
+   ul.mobile-menu-icon {
+      display: flex;
+   }
+
+   .about-caviar {
+      padding: 15px 2%;
+
+      h2 {
+         font-size: 5vw;
+      }
+   }
+
+   .offer {
+      padding: 20px 4% 13px 4%;
+   }
+
+   .contacts {
+      img {
+         width: 70%;
+      }
+   }
+
+   .about-us {
+
+      .about-us-inner {
+         flex-direction: column;
+
+         .text {
+            flex: 1 1 100%;
+            padding: 0 10px;
+         }
+
+         .photos {
+            flex: 1 1 100%;
+
+            .img {
+               padding-top: 35vw;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .main {
+      .main-image {
+         padding-top: 20vw;
+      }
+   }
+
+   .footer {
+      margin: 0 7%;
+
+      .copyright {
+         font-size: 11px;
+      }
+
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .logo {
+      padding-top: 70px;
+
+      a {
+         img {
+            width: 80%;
+         }
+      }
+   }
+
+   .main {
+      .main-image {
+         padding-top: 30vw;
+      }
+
+   }
+
+   .about-caviar {
+      h2 {
+         font-size: 5vw;
+      }
+
+      p {
+         font-size: 14px;
+      }
+   }
+
+   .special-title {
+      font-size: 36px;
+   }
+
+   .offer-body {
+      h2 {
+         font-size: 35px;
+      }
+   }
+
+   .about-us {
+
+      .about-us-inner {
+
+         .text {
+
+            p {
+               font-size: 14px;
+            }
+         }
+
+      }
+   }
+
+   .special-proposal {
+      margin: 0 0 25px;
+
+      .title {
+         font-size: 24px;
+      }
+   }
+
+   .caviar {
+      .image {
+         img {
+            width: 80%;
+         }
+      }
+
+   }
+
+   .description {
+      p {
+         font-size: 13px;
+         margin: 0 0 12px;
+      }
+   }
+
+   .contacts {
+      p {
+         font-size: 14px;
+      }
+   }
+
+   .payment {
+      font-size: 12px;
+
+      p {
+         margin: 0 0 12px 0;
+      }
+   }
+
+}
+
+@media only screen and (max-width: 600px) {
+   .about-caviar {
+      padding: 15px 2%;
+
+      h2 {
+         margin: 0 0 15px;
+      }
+
+      p {
+         font-size: 13px;
+         margin: 0 0 12px;
+      }
+   }
+
+   .special-title {
+      font-size: 6vw;
+   }
+
+   .offer {
+      h1 {
+         font-size: 3.2vw;
+      }
+   }
+
+   .offer-body {
+      margin: 0 0 25px 0;
+
+      h2 {
+         font-size: 32px;
+         margin: 0 0 15px;
+      }
+   }
+
+   .contacts {
+      p {
+         font-size: 13px;
+         margin: 5px 0;
+      }
+   }
+
+   .about-us {
+
+      .about-us-inner {
+
+         .text {
+
+            p {
+               font-size: 13px;
+            }
+         }
+
+      }
+   }
+
+   .payment-method {
+      .icons {
+         img {
+            height: 7vw;
+         }
+      }
+
+      .currency {
+         padding: 2px;
+
+         span {
+            &:first-child {
+               font-size: 2.8vw;
+            }
+
+            &:last-child {
+               font-size: 2.5vw;
+            }
+         }
+      }
+   }
+
+   .special-proposal {
+      .title {
+         font-size: 4vw;
+      }
+   }
+
+   .caviar {
+      margin: 23px 0;
+
+   }
+
+}
+
+@media only screen and (max-width:410px) {
+   header {
+      padding: 0.7 4%;
+   }
+
+   .main {
+      margin: 0 4%;
+   }
+
+   .about-caviar {
+      h2 {
+         font-size: 5.6vw;
+         margin: 0 0 15px;
+      }
+   }
+
+   .special-title {
+      font-size: 6.3vw;
+   }
+
+   .offer {
+      h1 {
+         font-size: 3.5vw;
+      }
+   }
+
+   .offer-body {
+      margin: 0 0 25px 0;
+   }
+
+   .special-proposal {
+      .title {
+         font-size: 4.4vw;
+
+      }
+   }
+
+   .payment-method {
+      .currency {
+         padding: 2px;
+
+         span {
+            &:first-child {
+               font-size: 3vw;
+            }
+
+            &:last-child {
+               font-size: 2.7vw;
+            }
+         }
+      }
+   }
+
+   .caviar {
+      margin: 20px 0;
+   }
+
+   .about-product {
+      h3 {
+         font-size: 4vw;
+      }
+   }
+
+   .footer {
+      margin: 0 4%;
+   }
+}

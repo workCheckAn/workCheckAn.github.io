@@ -1,0 +1,455 @@
+@import '_nullstyle';
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+   overflow: hidden;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   min-height: 100%;
+   background-color: #3D3D3B;
+
+   .content {
+      flex: 1 1 auto;
+   }
+}
+
+a.active {
+   color: #F2CF68 !important
+}
+
+/* Навигация */
+
+header {
+   background-color: #3D3D3B;
+   padding: 0 7%;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   width: 210px;
+   padding-top: 80px;
+   position: relative;
+   margin: 0 6.5% 0 0;
+
+   a {
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: 2;
+      }
+   }
+
+
+}
+
+ul.menu {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+
+   li {
+
+      a {
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 1.2;
+         letter-spacing: 0.03em;
+         color: #FFFFFF;
+
+         &:hover {
+            color: #F2CF68;
+         }
+      }
+
+   }
+}
+
+ul.mobile-menu-icon {
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 50px;
+   height: 25px;
+
+   li {
+      width: 100%;
+      height: 3px;
+      background-color: #FFFFFF;
+   }
+}
+
+.mobile-nav {
+   background-color: #3D3D3B;
+   min-width: 100%;
+   margin: 30px 0;
+   animation-duration: 0.5s;
+   animation-delay: 0.5s;
+   animation-name: fadeInDown;
+
+   ul.mobile-menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+
+      li {
+         padding: 15px 0;
+
+         &:last-child {
+            border: none;
+         }
+
+         a {
+            display: block;
+            font-size: 16px;
+            line-height: 1;
+            color: #fff;
+
+            &:hover {
+               color: #F2CF68;
+            }
+         }
+      }
+   }
+}
+
+/* /Навигация */
+
+
+
+.main {
+   margin: 0 7%;
+   position: relative;
+   background-color: #292929;
+
+   .main-image {
+      width: 100%;
+      padding-top: 14vw;
+      position: relative;
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: 2;
+      }
+   }
+}
+
+.about-caviar {
+   text-align: center;
+   padding: 15px 7%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+   .special-title {
+      color: #0CC;
+   }
+
+   h2 {
+      font-size: 40px;
+      line-height: 1.1;
+      color: #fff;
+      font-weight: 600;
+      margin: 0 0 20px;
+   }
+
+   p {
+      font-size: 16px;
+      line-height: 1.2;
+      color: #F2CF68;
+      margin: 0 0 16px;
+   }
+}
+
+.special-title {
+   text-align: center;
+   font-size: 41px;
+   line-height: 1;
+   font-weight: 700;
+   color: #3059CE;
+   margin: 5px 0 7px 0;
+}
+
+.offer {
+   background-color: #FFFFFF;
+   padding: 20px 7% 13px 7%;
+
+   h1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      margin: 0 0 20px 0;
+   }
+}
+
+.offer-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 2px solid #F2CF68;
+   margin: 0 0 30px 0;
+
+   h2 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 1.1;
+      font-weight: 600;
+      margin: 0 0 20px;
+   }
+
+}
+
+.contacts {
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 10px 5px 15px 5px;
+
+   p {
+      font-size: 16px;
+      line-height: 1.1;
+      margin: 7px 0 7px;
+   }
+
+   a {
+      color: #3F51BD;
+   }
+
+   .address {
+      font-size: 16px;
+      line-height: 1.2;
+      margin: 20px 0 20px 0;
+   }
+
+   .website-link {
+      margin: 20px 0;
+
+      a {
+         color: #000000;
+         font-size: 18px;
+         line-height: 1.1;
+
+         &:hover {
+            color: #3F51BD;
+         }
+      }
+   }
+
+   img {
+      width: 60%;
+   }
+}
+
+.about-us {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+   .about-us-inner {
+      display: flex;
+
+      .text {
+         flex: 1 1 45%;
+         padding: 0 10px;
+
+         p {
+            font-size: 16px;
+            line-height: 1.2;
+            margin: 10px 0 10px;
+         }
+      }
+
+      .photos {
+         flex: 1 1 50%;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         height: fit-content;
+
+         .img {
+            flex: 1 1 45%;
+            width: 100%;
+            padding-top: 15vw;
+            position: relative;
+            margin: 1.2%;
+
+            img {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               z-index: 2;
+            }
+         }
+      }
+   }
+}
+
+.payment-method {
+   display: flex;
+   justify-content: flex-end;
+
+   .icons {
+      img {
+         height: 40px;
+         width: 100%;
+      }
+   }
+
+   .currency {
+      background-color: #000000;
+      text-align: center;
+      padding: 4px 6px 6px 6px;
+      width: fit-content;
+
+      span {
+         color: #fff;
+         font-weight: 700;
+
+         &:first-child {
+            font-size: 18px;
+         }
+
+         &:last-child {
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+.special-proposal {
+   margin: 0 0 30px;
+
+   .title {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      text-align: center;
+      margin: 10px 0 15px 0;
+   }
+
+}
+
+.caviar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin: 10px 0 0 0;
+
+   .image {
+      margin: 0 0 14px 0;
+
+      img {
+         min-width: 100%;
+      }
+
+   }
+
+}
+
+.price {
+
+   .old {
+      color: #FF0000;
+      text-decoration: line-through;
+   }
+
+}
+
+.about-product {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 0 30px 0;
+
+   h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      margin: 0 0 14px;
+
+      a {
+         color: #000000;
+
+
+         &:hover {
+            color: #3F51BD;
+         }
+      }
+   }
+}
+
+.description {
+   text-align: center;
+
+   p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      margin: 0 0 14px 0;
+   }
+}
+
+.payment {
+   text-align: center;
+   font-size: 13px;
+   line-height: 1;
+
+   h4 {
+      font-weight: 700;
+   }
+
+   .icons {
+      margin: 0 0 14px 0;
+   }
+
+   p {
+      margin: 0 0 13px 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+.footer {
+   margin: 0 7%;
+   background-color: #292929;
+
+   .copyright {
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      padding: 10px 0;
+      color: #fff;
+      opacity: 0.4;
+   }
+
+}
